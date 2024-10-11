@@ -9,7 +9,7 @@ y Math.random() para la jugada de la computadora.
 ○ Añade validaciones para entradas incorrectas.
 ● Objetivo: Usar funciones, estructuras de control y manejo de entradas aleatorias.*/
 
-//console.log("Introduzca: papel, tijeras o piedra:")
+
 jugador = prompt("Introduzca: papel, tijeras o piedra:");
 if (jugador == "piedra" || jugador == "papel"||jugador == "tijeras"){
     ganador(jugador,generar());
@@ -20,7 +20,7 @@ if (jugador == "piedra" || jugador == "papel"||jugador == "tijeras"){
 
 
 function generar(){
-    let num= Math.floor(Math.random() * 3) + 1;
+    let num= Math.floor(Math.random() * 3) + 1; //genera un número aleatorio de 1 a 3 
     switch (num){
         case 1:
             return"piedra";
