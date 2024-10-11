@@ -12,5 +12,5 @@ function lanzamiento(){
     }
     return veces7;
 }
-// var siete = lanzamiento();
-// console.log("En 100 lanzamientos de dados, han salido: "+siete+" veces siete");
+var siete = lanzamiento();
+console.log("En 100 lanzamientos de dados, han salido: "+siete+" veces siete");

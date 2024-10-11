@@ -1,4 +1,0 @@
-class listaEstudiantes{
-    lista = [Estudiante];
-    
-}

@@ -22,21 +22,24 @@ function generadorPrimos(n){
     }
 }
 
-function isPrime(number){
-    if (number === 1) {
+function isPrime(num){
+    if (num <=1) {
         return false;
-    }else if (number > 1) {
-        for (let i = 2; i <= number/2; i++) {
-            if (number % i == 0) {
-                return false;
-                break;
-            }
+    }else if (num<=3) {
+        return true;        
+    }
+    if(num%2==0||num%3==0){
+        return false;
+    }
+    let i = 5;
+    while (i*i<=num){
+        if(num % i == 0 || num % (i+2)==0){
+            return false;
         }
+        i+=6;
     }
+    return true;
     
-    else {
-        return false;
-    }
 }
 
-generadorPrimos(27);
+generadorPrimos(11);
