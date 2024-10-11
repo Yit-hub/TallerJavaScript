@@ -11,7 +11,7 @@ matemático.
 
  */
 function generadorPrimos(n){
-    if(n>=1){
+    if(n>1){
         for(i=n;i>1;i--){
             if(isPrime(n)){
                 console.log(n);
@@ -22,8 +22,21 @@ function generadorPrimos(n){
     }
 }
 
-function isPrime(n){
-
+function isPrime(number){
+    if (number === 1) {
+        return false;
+    }else if (number > 1) {
+        for (let i = 2; i <= number/2; i++) {
+            if (number % i == 0) {
+                return false;
+                break;
+            }
+        }
+    }
+    
+    else {
+        return false;
+    }
 }
 
-generadorPrimos(100);
+generadorPrimos(27);
